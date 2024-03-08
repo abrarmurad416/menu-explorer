@@ -19,7 +19,8 @@ const MapComp = ({ onOpen }) => {
         </LayersControl.BaseLayer>
         <LayersControl.BaseLayer name="Additional Layer">
           <TileLayer
-            url="https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png"
+            url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
         </LayersControl.BaseLayer>
         {/* Overlay layers (if any) */}

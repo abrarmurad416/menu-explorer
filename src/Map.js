@@ -17,15 +17,19 @@ const MapComp = ({ onOpen }) => {
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           />
         </LayersControl.BaseLayer>
-        <LayersControl.BaseLayer name="Additional Layer">
+        <LayersControl.BaseLayer name="OpenStreetMap de">
           <TileLayer
             url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
         </LayersControl.BaseLayer>
-        {/* Overlay layers (if any) */}
+        <LayersControl.BaseLayer name="OpenStreetMap fr">
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
+        </LayersControl.BaseLayer>
       </LayersControl>
-      {/* Markers */}
       <Marker position={center} icon={defaultMarker}>
         <Popup className="request-popup">
           <button onClick={onOpen}>Open Modal</button>

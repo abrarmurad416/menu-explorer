@@ -10,7 +10,6 @@ const MapComp = ({ onOpen }) => {
   return (
     <MapContainer style={{ height: "100vh" }} center={center} zoom={13}>
       <LayersControl position="topright">
-        {/* Base layers */}
         <LayersControl.BaseLayer checked name="OpenStreetMap">
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

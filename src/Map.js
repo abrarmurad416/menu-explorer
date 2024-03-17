@@ -8,7 +8,8 @@ const union = [43.6452, -79.3806];
 
 const MapComp = ({ onOpen }) => {
   return (
-    <MapContainer style={{ height: "100vh" }} center={center} zoom={13}>
+    <div style={{ paddingTop: "56px" }}>
+    <MapContainer style={{ height: "calc(100vh - 56px)" }} center={center} zoom={13}>
       <LayersControl position="topright">
         <LayersControl.BaseLayer checked name="OpenStreetMap">
           <TileLayer
@@ -40,6 +41,7 @@ const MapComp = ({ onOpen }) => {
         </Popup>
       </Marker>
     </MapContainer>
+    </div>
   );
 };
 

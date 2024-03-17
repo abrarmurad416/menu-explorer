@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <div>
-      <Navbar className="py-2" color="dark" dark>
+      <Navbar className="py-2" color="dark" dark fixed="top">
         <NavbarBrand href="/">
           <img
             alt="logo"

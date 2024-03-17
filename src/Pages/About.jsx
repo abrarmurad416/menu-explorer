@@ -2,10 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
-      <strong>
-        <h1>About</h1>
-      </strong>
+    <div style={{ paddingTop: '56px' }}>
+      <br />
+      <br />
+      <br />
+      <strong><h1>ABOUTTTTTTTTTTTT</h1></strong>
     </div>
   );
 };

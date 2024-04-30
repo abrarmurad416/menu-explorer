@@ -32,12 +32,12 @@ const MapComp = ({ onOpen }) => {
       </LayersControl>
       <Marker position={center} icon={defaultMarker}>
         <Popup className="request-popup">
-          <button onClick={onOpen}>Open Modal</button>
+          <button onClick={onOpen}>More Info</button>
         </Popup>
       </Marker>
       <Marker position={union} icon={defaultMarker}>
         <Popup className="request-popup">
-          <button onClick={onOpen}>Open Modal</button>
+          <button onClick={onOpen}>More Info</button>
         </Popup>
       </Marker>
     </MapContainer>

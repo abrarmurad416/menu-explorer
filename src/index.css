@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  padding: 0;
 }
 
 code {
@@ -14,10 +15,15 @@ code {
 }
 
 
-.spacer {
+#visual {
   aspect-ratio: 960/300;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+
+.layer {
+  background-image: url(./Components/svgpattern.svg);
 }

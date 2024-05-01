@@ -6,7 +6,7 @@ import svgpattern from "../Components/svgpattern.svg";
 const Footer = () => {
     return (
         <div className='d-flex flex-column'>
-            <div>
+            <div classname="spacer">
                 <img src={svgpattern} alt="Your SVG" className="img-fluid" />
             </div>
             <div className="navbar-fixed-bottom">

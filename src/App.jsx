@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Modal from "./Modal";
-import MapComp from "./Map";
+import Modal from "./MapElements/Modal"
+import MapComp from "./MapElements/Map";
 import Navigation from "./Components/Navigation";
 import About from "./Pages/About";
 

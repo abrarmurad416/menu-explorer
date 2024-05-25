@@ -1,3 +1,4 @@
+// styling for the pop-up pin
 const popupContent = {
     textAlign: "center",
     height: "350px",

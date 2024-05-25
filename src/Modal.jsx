@@ -4,38 +4,24 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 export default function CustomModal({ show, onClose }) {
   return (
-    // <Modal show={show} onHide={onClose}>
-    //   <Modal.Header closeButton>
-    //     <Modal.Title>Modal heading</Modal.Title>
-    //   </Modal.Header>
-    //   <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-    //   <Modal.Footer>
-    //     <Button variant="secondary" onClick={onClose}>
-    //       Close
-    //     </Button>
-    //     <Button variant="primary" onClick={onClose}>
-    //       Save Changes
-    //     </Button>
-    //   </Modal.Footer>
-    // </Modal>
     <div>
       <Modal isOpen={show} toggle={onClose}>
-        <ModalHeader onClose={onClose}>Modal title</ModalHeader>
+        <ModalHeader onClose={onClose}><b>High Park</b></ModalHeader>
         <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam ipsam aut deserunt cupiditate vero voluptatem nulla ab laudantium neque, corrupti modi a quisquam voluptate facere maiores! Obcaecati, quidem aperiam repellendus aspernatur sit sunt nam. Eligendi, voluptas at, expedita vero vitae fugiat iure rerum veritatis autem temporibus quis culpa fuga.
+        </ModalBody>
+        <ModalBody>
+          Activities
+        </ModalBody>
+        <ModalBody>
+          Activities
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={onClose}>
-            Do Something
-          </Button>{" "}
-          <Button color="secondary" onClick={onClose}>
-            Cancel
+            <a href="https://www.highparktoronto.com/" target="_blank" rel="noreferrer" className="text-light text-decoration-none ">Link to site</a>
+          </Button>
+          <Button color="danger" onClick={onClose}>
+            Close
           </Button>
         </ModalFooter>
       </Modal>

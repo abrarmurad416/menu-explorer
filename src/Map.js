@@ -1,10 +1,12 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup, LayersControl } from "react-leaflet";
 import { defaultMarker } from "./defaultMarker";
-import "./Map.css";
+import "./index.css"
 
 const center = [43.653225, -79.383186];
-const union = [43.6452, -79.3806];
+const torontoislandpark = [43.623409, -79.368683];
+const highpark = [43.645485, -79.464752];
+const queenspark = [43.66263, -79.393308]
 
 const MapComp = ({ onOpen }) => {
   return (
@@ -30,14 +32,19 @@ const MapComp = ({ onOpen }) => {
           />
         </LayersControl.BaseLayer>
       </LayersControl>
-      <Marker position={center} icon={defaultMarker}>
+      <Marker position={torontoislandpark} icon={defaultMarker}>
         <Popup className="request-popup">
-          <button onClick={onOpen}>More Info</button>
+          <button onClick={onOpen}>Toronto Island Park</button>
         </Popup>
       </Marker>
-      <Marker position={union} icon={defaultMarker}>
+      <Marker position={highpark} icon={defaultMarker}>
         <Popup className="request-popup">
-          <button onClick={onOpen}>More Info</button>
+          <button onClick={onOpen}>High Park</button>
+        </Popup>
+      </Marker>
+      <Marker position={queenspark} icon={defaultMarker}>
+        <Popup className="request-popup">
+          <button onClick={onOpen}>Queen's Park</button>
         </Popup>
       </Marker>
     </MapContainer>

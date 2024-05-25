@@ -9,11 +9,15 @@ body {
   padding: 0;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+.request-popup .leaflet-popup-content-wrapper {
+  border-radius: 0px;
+}
 
 #visual {
   aspect-ratio: 960/300;

@@ -23,8 +23,8 @@ export default [
         position: [43.662637, -79.393308],
         header: "Queen's Park",
         description: "Nestled in the heart of downtown Toronto, Queen's Park stands as a majestic testament to the city's rich history and vibrant spirit. Spanning lush greenery and iconic architecture, this urban oasis offers a harmonious blend of natural beauty, historical significance, and cultural vitality.",
-        nature: ["Trails", "lorem", "lorem", "lorem"],
-        activities: ["lorem", "lorem", "lorem", "lorem"],
+        nature: ["Trails", "Trees", "Flowers", "Trillium Garden"],
+        activities: ["Tours", "Biking", "Historical landmarks", "Historical monuments"],
         website: "https://www.toronto.ca/data/parks/prd/facilities/complex/2674/index.html"
     }
 ];

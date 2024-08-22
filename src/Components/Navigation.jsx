@@ -21,15 +21,15 @@ const Navigation = () => {
             }}
             className="mx-2"
           />
-          <b>torontoParks</b>
+          <b>menu explorer</b>
         </NavbarBrand>
         <div>
           {/* React router link to the about page */}
-          <Button color="primary" tag={Link} to="/about">About</Button>{" "}
+          <Button color="danger" tag={Link} to="/about">About</Button>{" "}
           {/* external link to blog */}
           {/* noreferrer adds extra security so the linked page does not know which site you came from */}
           <a href="https://a8d.vercel.app/" target="_blank" rel="noreferrer">
-            <Button color="success">Blog</Button>
+            <Button color="warning">Blog</Button>
           </a>
         </div>
       </Navbar>
